@@ -1,7 +1,3 @@
-/*
-Edgar Cardenas
-CS 3240
-*/
 #include "apue.h"
 #include <math.h>
 #define BUFFSIZE 4096
