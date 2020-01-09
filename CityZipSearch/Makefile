@@ -1,6 +1,3 @@
-#CS 4540 A1
-#Edgar Cardenas
-
 CC = gcc
 CFLAGS = -g -Wall
 
