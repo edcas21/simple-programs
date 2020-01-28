@@ -9,6 +9,7 @@ def hourglassSum(arr):
 
     maxHourglassSum = 0
     hgSum = 0
+    hgNum = 0
     
     for r in range(len(arr) - 1):
         topCone = r - 1
@@ -23,6 +24,13 @@ def hourglassSum(arr):
             
             # Add all the values together
             hgSum = neck + sumTopCone + sumBotCone
+            
+            # Count the hourglass figures
+            hgNum += 1
+            
+            # Start the hourglass sum at a representative value
+            if hgNum == 1:
+                maxHourglassSum = hgSum
             
             # Update max
             if hgSum > maxHourglassSum:
